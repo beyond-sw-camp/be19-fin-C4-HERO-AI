@@ -47,7 +47,7 @@ app.add_middleware(
 # LLM 모델 데이터
 llm = ChatOpenAI(
     model="gpt-4o",
-    temperature=0.3,
+    temperature=0.1,
     api_key=OPENAI_API_KEY,
 )
 
