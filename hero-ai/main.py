@@ -1,9 +1,9 @@
 # File Name: main.py 
 # Description: 파이썬 서버 실행 파일 
-
+#
 # history: 
 # 2025/12/20 - 승민 최초 작성
-
+#
 # @author: 승민
 
 
@@ -15,118 +15,65 @@ from dotenv import load_dotenv
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
 
 from langchain_openai import ChatOpenAI
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.output_parsers import PydanticOutputParser
 
+# 사원 분석 (analysis.py)
+from analysis import (
+    MemberEvaluation,
+    AnalysisResult,
+    member_analysis_prompt,
+    member_output_parser
+)
 
-# 환경 변수 로드 함수
+# 승진 대상자 추천 (promotion.py)
+from promotion import (
+    PromotionCandidate,
+    PromotionLLMResult,
+    extract_top_candidates,
+    recommend_grade,
+    promotion_prompt,
+    promotion_output_parser
+)
+
+# 평가 가이드 위반 (violation.py)
+from violation import analyze_guide_violations, GuideViolation
+
+# 환경 변수 로드
 load_dotenv()
-
-# OPENAI_API_KEY 데이터
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-if not OPENAI_API_KEY:
-    raise RuntimeError("OPENAI_API_KEY가 설정되지 않았습니다 (.env 파일 확인)")
 
-
-# FastAPI 실행 앱
+# Fast API 사용
 app = FastAPI()
 
-# CORS 설정
+# CORS 처리
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  
+    allow_origins=["*"],
     allow_credentials=True,
-    allow_methods=["*"],  
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
 
-# LLM 모델 데이터
+# LLM 모델 사용
 llm = ChatOpenAI(
     model="gpt-4o",
-    temperature=0.3,
+    temperature=0.1,
     api_key=OPENAI_API_KEY,
 )
 
-
-# 요청 모델 타입
-class FormItem(BaseModel):
-    item_name: str
-    score: float
-    weight: float
-    comment: str
-
-
-class MemberEvaluation(BaseModel):
-    template_name: str
-    employee_name: str
-    employee_department: str
-    employee_grade: str
-    total_score: float
-    total_rank: str
-    form_items: List[FormItem]
-
-
-# 응답 모델 타입
-class AnalysisResult(BaseModel):
-    strengths: List[str]
-    improvements: List[str]
-    action_plan: List[str]
-
-# AI의 출력을 Pydantic 모델(BaseModel)에 맞게 구조화된 데이터로 변환
-output_parser = PydanticOutputParser(
-    pydantic_object=AnalysisResult
-)
-format_instructions = output_parser.get_format_instructions()
-
-
-# LLM에 보낼 프롬프트 설계
-analysis_prompt = ChatPromptTemplate.from_template("""
-너는 기업 인사팀에서 사용하는 평가 분석 AI야.
-
-아래 사원 평가 데이터를 기반으로 분석해.
-
-{format_instructions}
-
-[평가 템플릿]
-{template_name}
-
-[사원 정보]
-이름: {employee_name}
-부서: {employee_department}
-직급: {employee_grade}
-
-[최종 점수]
-{total_score}
-
-[최종 등급]
-{total_rank}
-
-[세부 평가 항목]
-{items}
-
-조건:
-- 반드시 JSON 형식으로만 응답
-- 한국어
-- 실무 인사평가 스타일
-- 추상적인 말 금지
-- 실행 가능한 피드백 중심
-""")
-
-
-# 사원의 평가 분석 POST 요청 API
-@app.post("/api/analyze/member")
+# 사원 분석 API 
+@app.post("/api/analyze/member", response_model=AnalysisResult)
 async def analyze_member(data: MemberEvaluation):
-    # 평가 항목 문자열 생성
+
     items_text = "\n".join([
-        f"- {item.item_name}: {item.score}점 (가중치 {item.weight}%) / 코멘트: {item.comment}"
-        for item in data.form_items
+        f"- {i.item_name}: {i.score}점 (가중치 {i.weight}%) / 코멘트: {i.comment}"
+        for i in data.form_items
     ])
 
-    prompt = analysis_prompt.format(
+    # 프롬프트 데이터 초기화
+    prompt = member_analysis_prompt.format(
         template_name=data.template_name,
         employee_name=data.employee_name,
         employee_department=data.employee_department,
@@ -134,21 +81,81 @@ async def analyze_member(data: MemberEvaluation):
         total_score=data.total_score,
         total_rank=data.total_rank,
         items=items_text,
-        format_instructions=format_instructions,
+        format_instructions=member_output_parser.get_format_instructions()
     )
 
-    # LLM 호출
+    # LLM 모델로 사원 분석
     response = llm.invoke(prompt)
 
-    # LangChain 방식으로 반환
-    return output_parser.parse(response.content)
+    # 사원 분석 데이터 응답
+    return member_output_parser.parse(response.content)
 
 
-# 헬스 체크 GET 요청 API
+# 승진 대상자 추천 API
+@app.post("/api/analyze/promotion", response_model=List[PromotionCandidate])
+async def analyze_promotion(dashboard_data: List[dict]):
+
+    # 사원(승진 후보자) 데이터 추출
+    candidates = extract_top_candidates(dashboard_data)
+    results: List[PromotionCandidate] = []
+
+    # 후보자 데이터에서 필요한 데이터 정리
+    for c in candidates:
+        items_text = "\n".join([
+            f"- {i['formItemName']}: {i['formItemScore']}점"
+            for i in c["formItems"]
+            if i["formItemScore"] is not None
+        ])
+
+        # 프롬프트 데이터 초기화
+        prompt = promotion_prompt.format(
+            name=c["name"],
+            department=c["department"],
+            grade=c["grade"],
+            growth_rate=c["growth"],
+            items=items_text,
+            format_instructions=promotion_output_parser.get_format_instructions()
+        )
+
+        # LLM 모델로 승진 대상자 추천
+        response = llm.invoke(prompt)
+        parsed: PromotionLLMResult = promotion_output_parser.parse(response.content)
+
+        # 응답 데이터 배열에 승진 대상자 추가
+        results.append(
+            PromotionCandidate(
+                name=c["name"],
+                department=c["department"],
+                current_grade=c["grade"],
+                recommended_grade=recommend_grade(c["grade"]),
+                growth_rate=c["growth"],
+                core_competencies=parsed.core_competencies,
+                reason=parsed.reason
+            )
+        )
+
+    return results
+
+# 평가 가이드 위반 API
+@app.post("/api/analyze/violation", response_model=List[GuideViolation])
+async def analyze_guide_violation_api(payload: dict):
+
+    guide_text = payload["guide"]
+    template = payload["template"]   
+
+    results = analyze_guide_violations(
+        template=template,
+        guide_text=guide_text,
+        llm=llm
+    )
+
+    return results
+
+
+# 헬스 체크 API
 @app.get("/")
 def health_check():
     return {"status": "ok"}
-
 
 # main.py 실행
 if __name__ == "__main__":
