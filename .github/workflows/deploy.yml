@@ -10,8 +10,10 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v3
 
-      - name: Generate deployment package
-        run: zip -r deploy.zip . -x "*.git*" # .env는 원래 ignore되어 있으므로 포함 안 됨
+      - name: Generate deployment package (only hero-ai)
+        run: |
+            cd hero-ai
+            zip -r ../deploy.zip . -x "*.git*"
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
