@@ -50,6 +50,12 @@ member_analysis_prompt = ChatPromptTemplate.from_template("""
 
 {format_instructions}
 
+출력 규칙 (매우 중요):
+- 반드시 strengths, improvements, action_plan 3개 필드를 모두 포함할 것
+- action_plan은 절대 생략하지 말 것
+- action_plan은 최소 2개 이상
+- 실행 가능한 행동 단위로 작성
+
 [평가 템플릿]
 {template_name}
 
@@ -67,10 +73,22 @@ member_analysis_prompt = ChatPromptTemplate.from_template("""
 [세부 평가 항목]
 {items}
 
+출력 예시(JSON 형식):
+{{
+  "strengths": [
+    "업무 수행 안정성이 높고 일정 관리가 우수함"
+  ],
+  "improvements": [
+    "문제 해결 과정에서 주도적인 접근이 필요함"
+  ],
+  "action_plan": [
+    "매주 개인 업무 목표를 명확히 설정하고 실행 결과를 점검한다",
+    "분기별 역량 개선 계획을 수립하고 팀장 피드백을 받는다"
+  ]
+}}
+
 조건:
-- 반드시 JSON 형식으로만 응답
+- 반드시 JSON 형식
 - 한국어
 - 실무 인사평가 스타일
-- 추상적인 말 금지
-- 실행 가능한 피드백 중심
 """)

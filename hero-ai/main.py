@@ -84,11 +84,21 @@ async def analyze_member(data: MemberEvaluation):
         format_instructions=member_output_parser.get_format_instructions()
     )
 
-    # LLM 모델로 사원 분석
     response = llm.invoke(prompt)
 
-    # 사원 분석 데이터 응답
-    return member_output_parser.parse(response.content)
+    parsed: AnalysisResult = member_output_parser.parse(response.content)
+
+    if not parsed.action_plan:
+        parsed.action_plan = [
+            "매주 개인 업무 목표를 명확히 설정하고 실행 결과를 점검한다",
+            "업무 종료 후 개선 사항을 정리하여 다음 업무에 반영한다"
+        ]
+
+        print("⚠️ action_plan 누락 → 기본값 적용")
+
+    return parsed
+
+    
 
 
 # 승진 대상자 추천 API
