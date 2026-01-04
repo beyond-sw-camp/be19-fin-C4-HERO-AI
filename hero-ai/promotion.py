@@ -10,6 +10,8 @@ from typing import List, Dict
 from pydantic import BaseModel
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser
+from collections import defaultdict
+from statistics import mean
 
 # 승진 추천 대상자 타입 
 class PromotionCandidate(BaseModel):
@@ -45,59 +47,60 @@ def recommend_grade(current: str) -> str:
 # 승진 추천 대상자 추출 함수
 def extract_top_candidates(dashboard_data: List[Dict]) -> List[Dict]:
     """
-    가장 최근 템플릿과 그 직전 템플릿을 비교하여
-    전 분기 대비 성장률이 높은 상위 3명을 추출
+    모든 평가 데이터를 기반으로
+    사원별 '평균 성장량(추세)'이 가장 높은 상위 3명 추출
     """
 
-    # 평가 템플릿 정렬
+    # 평가 템플릿 시간순 정렬
     templates = sorted(
         dashboard_data,
         key=lambda x: x["evaluationTemplateId"]
     )
 
-    if len(templates) < 2:
-        return []
+    # 사원별 점수 시계열
+    score_history = defaultdict(list)
+    employee_info = {}
 
-    # 가장 최근 템플릿 2개를 사용 
-    prev_template = templates[-2]
-    curr_template = templates[-1]
+    # 모든 평가에서 점수 수집
+    for t in templates:
+        for ev in t["evaluations"]:
+            for e in ev["evaluatees"]:
+                score = e["evaluationEvaluateeTotalScore"]
+                if score is None:
+                    continue
 
-    # 이전 분기 점수 맵
-    prev_scores = {}
-    for ev in prev_template["evaluations"]:
-        for e in ev["evaluatees"]:
-            prev_scores[e["evaluationEvaluateeId"]] = e["evaluationEvaluateeTotalScore"]
+                eid = e["evaluationEvaluateeId"]
+                score_history[eid].append(score)
+
+                # 기본 정보 저장
+                employee_info[eid] = {
+                    "name": e["evaluationEvaluateeName"],
+                    "department": e["evaluationEvaluateeDepartmentName"],
+                    "grade": e["evaluationEvaluateeGrade"],
+                    "formItems": e["formItems"]
+                }
 
     growth_candidates = []
 
-    # 이전 분기 점수와 현재 분기 점수 비교 계산
-    for ev in curr_template["evaluations"]:
-        for e in ev["evaluatees"]:
-            pid = e["evaluationEvaluateeId"]
+    for eid, scores in score_history.items():
+        # 최소 2회 이상 평가된 사람만 대상
+        if len(scores) < 2:
+            continue
 
-            if (
-                pid not in prev_scores
-                or prev_scores[pid] is None
-                or e["evaluationEvaluateeTotalScore"] is None
-            ):
-                continue
+        # 성장세 계산 (평균 분기 증가량)
+        deltas = [
+            scores[i] - scores[i - 1]
+            for i in range(1, len(scores))
+        ]
 
-            prev_score = prev_scores[pid]
-            curr_score = e["evaluationEvaluateeTotalScore"]
+        avg_growth = mean(deltas)
 
-            if prev_score == 0:
-                continue
+        growth_candidates.append({
+            **employee_info[eid],
+            "growth": round(avg_growth, 2)
+        })
 
-            growth_rate = ((curr_score - prev_score) / prev_score) * 100
-
-            growth_candidates.append({
-                "name": e["evaluationEvaluateeName"],
-                "department": e["evaluationEvaluateeDepartmentName"],
-                "grade": e["evaluationEvaluateeGrade"],
-                "growth": round(growth_rate, 1),
-                "formItems": e["formItems"]
-            })
-
+    # 성장세 기준 정렬
     return sorted(
         growth_candidates,
         key=lambda x: x["growth"],
