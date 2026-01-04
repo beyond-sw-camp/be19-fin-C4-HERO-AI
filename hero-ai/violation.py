@@ -8,6 +8,7 @@
 
 from typing import List, Dict
 from pydantic import BaseModel
+from collections import Counter
 
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_community.vectorstores import FAISS
@@ -76,6 +77,11 @@ violation_prompt = ChatPromptTemplate.from_template("""
 ❗ 아래 조건은 **절대 위반이 아니다**:
 - 점수와 등급이 기준에 정확히 부합하는 경우
 - 실적·점수·등급·코멘트가 서로 일관된 경우
+                                                    
+❗ 출력 문장 규칙 (매우 중요):
+- 어려운 용어 사용 금지
+- “점수 범위”, “기준 불일치”, “논리적 일관성” 같은 표현 금지
+- **사람에게 설명하듯 쉽게 작성**
 
 [평가 가이드 발췌]
 {guide_context}
@@ -95,11 +101,10 @@ JSON 형식:
   {{
     "피평가자": "...",
     "항목": "...",
-    "위반 사유": "..."
+    "위반 사유": "쉽고 간단한 문장으로 설명"
   }}
 ]
 """)
-
 
 # 평가 가이드 위반 분석 함수
 def analyze_guide_violations(
@@ -108,79 +113,83 @@ def analyze_guide_violations(
     llm: ChatOpenAI
 ) -> List[GuideViolation]:
 
-    # 평가 가이드 텍스트를 벡터 DB로 변환
     vectorstore = build_guide_vectorstore(guide_text)
-
-    # 벡터 DB를 검색기로 변환 (질문을 주면 관련 문서 조각을 찾아줌, 가장 유사한 조각 3개를 찾아줌)
     retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 
     results: List[GuideViolation] = []
 
     for ev in template["evaluations"]:
         evaluation_lines = []
+        all_ranks = []
 
-        # 평가 데이터 텍스트화
         for e in ev["evaluatees"]:
             for item in e["formItems"]:
+                rank = item.get("formItemRank")
+                if rank:
+                    all_ranks.append(rank)
+
                 evaluation_lines.append(
                     f"""
                     피평가자: {e['evaluationEvaluateeName']}
                     항목: {item['formItemName']}
                     실적: {item.get('formItemEvaluateePerformance')}
                     점수: {item.get('formItemScore')}
-                    등급: {item.get('formItemRank')}
+                    등급: {rank}
                     코멘트: {item.get('formItemComment')}
                     """
                 )
 
         evaluation_text = "\n".join(evaluation_lines)
 
-        # RAG 검색
         guide_docs = retriever.invoke(evaluation_text)
-
-        guide_context = "\n".join(
-            d.page_content for d in guide_docs
-        )
+        guide_context = "\n".join(d.page_content for d in guide_docs)
 
         prompt = violation_prompt.format(
             guide_context=guide_context,
             evaluation_data=evaluation_text
         )
 
-        #LLM 모델 사용
         response = llm.invoke(prompt).content.strip()
+        item_violations = []
 
-        # 정상 평가 필터링 
-        if response == "위반 없음":
+        if response != "위반 없음":
+            cleaned = clean_llm_json(response)
+            if cleaned.startswith("["):
+                try:
+                    item_violations = json.loads(cleaned)
+                except json.JSONDecodeError:
+                    pass
+
+        # ✅ 8번 가이드: 코드로만 처리
+        pattern_violations = []
+        total_items = len(all_ranks)
+
+        if total_items >= 10:
+            counter = Counter(all_ranks)
+            for grade, count in counter.items():
+                ratio = count / total_items
+                if ratio >= 0.85:
+                    pattern_violations.append({
+                        "피평가자": "전체",
+                        "항목": "평가자 등급 분포",
+                        "위반 사유": (
+                            f"{grade} 등급이 전체 항목의 {int(ratio*100)}%로 "
+                            "너무 많이 사용되었습니다."
+                        )
+                    })
+
+        merged = item_violations + pattern_violations
+
+        if not merged:
             continue
 
-        cleaned = clean_llm_json(response)
-
-        # JSON이 아닌 출력 필터링
-        if not cleaned.startswith("["):
-            continue
-
-        try:
-            parsed_violations = json.loads(cleaned)
-        except json.JSONDecodeError:
-            parsed_violations = [{
-                "피평가자": "알 수 없음",
-                "항목": "알 수 없음",
-                "위반 사유": cleaned
-            }]
-
-        # 리스트 필터링
-        if not isinstance(parsed_violations, list):
-            continue
-
-        # 최종 결과 배열에 데이터 추가
         results.append(
             GuideViolation(
                 evaluationTemplateId=template["evaluationTemplateId"],
                 evaluationTemplateName=template["evaluationTemplateName"],
                 managerName=ev["evaluationManagerName"],
                 departmentName=ev["evaluationDepartmentName"],
-                violations=parsed_violations
+                violations=merged
             )
         )
 
