@@ -160,7 +160,6 @@ def analyze_guide_violations(
                 except json.JSONDecodeError:
                     pass
 
-        # ✅ 8번 가이드: 코드로만 처리
         pattern_violations = []
         total_items = len(all_ranks)
 
