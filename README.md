@@ -64,6 +64,8 @@
 
 ## API 명세서
 <details>
+  <summary>REST API</summary>
+<details>
   <summary>급여 수당 마스터 API</summary>
 <img width="1301" height="328" alt="image" src="https://github.com/user-attachments/assets/03b17f62-a15f-4f98-acfb-0ec021b0b8c3" />
 </details>
@@ -150,7 +152,7 @@
   <summary>결재 API</summary>
 <img width="1301" height="745" alt="image" src="https://github.com/user-attachments/assets/28f44dff-c672-459e-8c33-75a50d1ea3b1" />
 </details>
-
+</details>
 
 
 
