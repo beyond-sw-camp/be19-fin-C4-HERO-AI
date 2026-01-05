@@ -1,4 +1,4 @@
-# HERO - 보이는 인사관리,통합 HR 대시보드
+<img width="1301" height="492" alt="image" src="https://github.com/user-attachments/assets/4eb7acd4-975f-454c-a2ec-57c806a77535" /># HERO - 보이는 인사관리,통합 HR 대시보드
 
 ## 기술 스택
 ### 🧩 Backend
@@ -59,76 +59,96 @@
 ## WBS
 
 
+
 ## 요구사항 명세서
 
 ## API 명세서
 <details>
-  <summary>REST API 올리는중</summary>
-급여 수당 마스터 API
+  <summary>급여 수당 마스터 API</summary>
 <img width="1301" height="328" alt="image" src="https://github.com/user-attachments/assets/03b17f62-a15f-4f98-acfb-0ec021b0b8c3" />
-
-퇴직 관리 API
+</details>
+<details>
+  <summary>퇴직 관리 API</summary>
 <img width="1301" height="399" alt="image" src="https://github.com/user-attachments/assets/a3ab9d5e-a1fc-4a75-be55-566369603630" />
-
-알림 설정 API
+</details>
+<details>
+  <summary>알림 설정 API</summary>
 <img width="1301" height="165" alt="image" src="https://github.com/user-attachments/assets/f6333a7e-ec52-4c3f-9d8c-ee48ddfc34a8" />
-
-내 급여 리포트 API
+</details>
+<details>
+  <summary>내 급여 리포트 API</summary>
 <img width="1301" height="165" alt="image" src="https://github.com/user-attachments/assets/e9aa76f4-36d3-4483-8ef4-02353702c732" />
-
-휴가 API
+</details>
+<details>
+  <summary>휴가 API</summary>
 <img width="1301" height="207" alt="image" src="https://github.com/user-attachments/assets/6050d313-a929-4be5-a270-98aa72473023" />
-
-급여 배치 API
+</details>
+<details>
+  <summary>급여 배치 API</summary>
 <img width="1301" height="466" alt="image" src="https://github.com/user-attachments/assets/c1e1c74f-416e-432f-8366-6868f5e6094d" />
-
-급여 정책 설정 참조 API
+</details>
+<details>
+  <summary>급여 정책 설정 참조 API</summary>
 <img width="1301" height="155" alt="image" src="https://github.com/user-attachments/assets/f3768b6a-642a-436f-9cb4-a3a76944ccdf" />
-
-홈 대시보드 API
+</details>
+<details>
+  <summary>홈 대시보드 API</summary>
 <img width="1301" height="462" alt="image" src="https://github.com/user-attachments/assets/8cc23109-f072-495f-ae57-dcb4e4b5d137" />
-
-급여 조회 API
+</details>
+<details>
+  <summary>급여 조회 API</summary>
 <img width="1301" height="159" alt="image" src="https://github.com/user-attachments/assets/35f20297-0c8f-474b-8a22-b1d70a5fd7fd" />
-
-급여 분석 API
+</details>
+<details>
+  <summary>급여 분석 API</summary>
 <img width="1301" height="211" alt="image" src="https://github.com/user-attachments/assets/a83eac1c-4da7-4e82-8acd-aff314d27fbc" />
-
-급여 계좌 API
+</details>
+<details>
+  <summary>급여 계좌 API</summary>
 <img width="1301" height="309" alt="image" src="https://github.com/user-attachments/assets/403f947d-ba71-405c-8838-8e6dca68c775" />
-
-급여 정책 관리 API
+</details>
+<details>
+  <summary>급여 정책 관리 API</summary>
 <img width="1301" height="596" alt="image" src="https://github.com/user-attachments/assets/09681d08-ca8e-4dff-9a1c-d314929e5bf9" />
 <img width="1301" height="304" alt="image" src="https://github.com/user-attachments/assets/b376564f-f99b-4a3f-9122-7fff45ac9c5b" />
-
-근태 API
+</details>
+<details>
+  <summary>근태 API</summary>
 <img width="1301" height="548" alt="image" src="https://github.com/user-attachments/assets/7a33639e-0ce3-4d91-98e5-3bfd300ccc9e" />
-
-급여 공제 마스터 API
+</details>
+<details>
+  <summary>급여 공제 마스터 API</summary>
 <img width="1301" height="302" alt="image" src="https://github.com/user-attachments/assets/eec6e7c7-2ac5-48b9-b03a-e8612cb43fa1" />
-
-파이썬 연동 API
+</details>
+<details>
+  <summary>파이썬 연동 API</summary>
 <img width="1301" height="218" alt="image" src="https://github.com/user-attachments/assets/54116da4-1c10-4e97-a7fa-ba6b4bc8bf23" />
-
-알림 API
+</details>
+<details>
+  <summary>알림 API</summary>
 <img width="1301" height="454" alt="image" src="https://github.com/user-attachments/assets/f1802456-81e1-49b5-a541-a857cfca8b13" />
-
-급여 명세서 API
+</details>
+<details>
+  <summary>급여 명세서 API</summary>
 <img width="1301" height="112" alt="image" src="https://github.com/user-attachments/assets/7069b5a5-36c6-47cd-9e58-0314368ff3d6" />
-
-API
-
-API
-
-API
-
-API
-
-API
-
-API
-
-API
+</details>
+<details>
+  <summary>평가 템플릿 API</summary>
+<img width="1301" height="689" alt="image" src="https://github.com/user-attachments/assets/b9efcecb-c52a-4fc8-9400-3bb5a8c985f3" />
+<img width="1301" height="550" alt="image" src="https://github.com/user-attachments/assets/022e2734-b0d8-4eaa-990c-83e0b880f753" />
+</details>
+<details>
+  <summary>사원 API</summary>
+<img width="1301" height="687" alt="image" src="https://github.com/user-attachments/assets/dedabb01-3898-4f76-a5d5-03e3f85fa4cf" />
+<img width="1301" height="492" alt="image" src="https://github.com/user-attachments/assets/69574f5c-2cf7-4e34-b050-7753cf8626d1" />
+</details>
+<details>
+  <summary>사원 패스워드 API</summary>
+<img width="1301" height="207" alt="image" src="https://github.com/user-attachments/assets/1635eef1-637b-4c96-982b-5e55ff8d44a1" />
+</details>
+<details>
+  <summary>결재 API</summary>
+<img width="1301" height="745" alt="image" src="https://github.com/user-attachments/assets/28f44dff-c672-459e-8c33-75a50d1ea3b1" />
 </details>
 
 
