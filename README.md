@@ -1,4 +1,4 @@
-<img width="1301" height="492" alt="image" src="https://github.com/user-attachments/assets/4eb7acd4-975f-454c-a2ec-57c806a77535" /># HERO - 보이는 인사관리,통합 HR 대시보드
+# HERO - 보이는 인사관리,통합 HR 대시보드
 
 ## 기술 스택
 ### 🧩 Backend
