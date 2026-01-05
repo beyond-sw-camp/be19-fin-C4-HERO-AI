@@ -61,6 +61,80 @@
 
 ## 요구사항 명세서
 
+## API 명세서
+<details>
+  <summary>REST API 올리는중</summary>
+급여 수당 마스터 API
+<img width="1301" height="328" alt="image" src="https://github.com/user-attachments/assets/03b17f62-a15f-4f98-acfb-0ec021b0b8c3" />
+
+퇴직 관리 API
+<img width="1301" height="399" alt="image" src="https://github.com/user-attachments/assets/a3ab9d5e-a1fc-4a75-be55-566369603630" />
+
+알림 설정 API
+<img width="1301" height="165" alt="image" src="https://github.com/user-attachments/assets/f6333a7e-ec52-4c3f-9d8c-ee48ddfc34a8" />
+
+내 급여 리포트 API
+<img width="1301" height="165" alt="image" src="https://github.com/user-attachments/assets/e9aa76f4-36d3-4483-8ef4-02353702c732" />
+
+휴가 API
+<img width="1301" height="207" alt="image" src="https://github.com/user-attachments/assets/6050d313-a929-4be5-a270-98aa72473023" />
+
+급여 배치 API
+<img width="1301" height="466" alt="image" src="https://github.com/user-attachments/assets/c1e1c74f-416e-432f-8366-6868f5e6094d" />
+
+급여 정책 설정 참조 API
+<img width="1301" height="155" alt="image" src="https://github.com/user-attachments/assets/f3768b6a-642a-436f-9cb4-a3a76944ccdf" />
+
+홈 대시보드 API
+<img width="1301" height="462" alt="image" src="https://github.com/user-attachments/assets/8cc23109-f072-495f-ae57-dcb4e4b5d137" />
+
+급여 조회 API
+<img width="1301" height="159" alt="image" src="https://github.com/user-attachments/assets/35f20297-0c8f-474b-8a22-b1d70a5fd7fd" />
+
+급여 분석 API
+<img width="1301" height="211" alt="image" src="https://github.com/user-attachments/assets/a83eac1c-4da7-4e82-8acd-aff314d27fbc" />
+
+급여 계좌 API
+<img width="1301" height="309" alt="image" src="https://github.com/user-attachments/assets/403f947d-ba71-405c-8838-8e6dca68c775" />
+
+급여 정책 관리 API
+<img width="1301" height="596" alt="image" src="https://github.com/user-attachments/assets/09681d08-ca8e-4dff-9a1c-d314929e5bf9" />
+<img width="1301" height="304" alt="image" src="https://github.com/user-attachments/assets/b376564f-f99b-4a3f-9122-7fff45ac9c5b" />
+
+근태 API
+<img width="1301" height="548" alt="image" src="https://github.com/user-attachments/assets/7a33639e-0ce3-4d91-98e5-3bfd300ccc9e" />
+
+급여 공제 마스터 API
+<img width="1301" height="302" alt="image" src="https://github.com/user-attachments/assets/eec6e7c7-2ac5-48b9-b03a-e8612cb43fa1" />
+
+파이썬 연동 API
+<img width="1301" height="218" alt="image" src="https://github.com/user-attachments/assets/54116da4-1c10-4e97-a7fa-ba6b4bc8bf23" />
+
+알림 API
+<img width="1301" height="454" alt="image" src="https://github.com/user-attachments/assets/f1802456-81e1-49b5-a541-a857cfca8b13" />
+
+급여 명세서 API
+<img width="1301" height="112" alt="image" src="https://github.com/user-attachments/assets/7069b5a5-36c6-47cd-9e58-0314368ff3d6" />
+
+API
+
+API
+
+API
+
+API
+
+API
+
+API
+
+API
+</details>
+
+
+
+
+
 
 ## DDD
 <img width="1190" height="643" alt="스크린샷 2026-01-05 오후 5 06 50" src="https://github.com/user-attachments/assets/46fb17fe-65dd-4aa6-b901-7007a671e5b9" />
