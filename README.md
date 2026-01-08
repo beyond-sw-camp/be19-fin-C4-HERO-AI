@@ -416,6 +416,15 @@ HERO는 단순한 기능 나열이 아닌,
     <summary>근태 이벤트</summary>
     <img width="1556" height="617" alt="image" src="https://github.com/user-attachments/assets/c7f53848-784f-4ffa-b6dd-f0904cbc9d1b" />
   </details>
+  <details>
+<summary>근무제 템플릿 목록 조회</summary>
+<img width="1315" height="379" alt="스크린샷 2026-01-08 오후 3 54 18" src="https://github.com/user-attachments/assets/cc7f0351-13de-4f3c-90af-6dc3d5f837ff" />
+</details>
+
+<details>
+<summary>근무제 템플릿 등록/수정</summary>
+<img width="1443" height="647" alt="스크린샷 2026-01-08 오후 3 54 26" src="https://github.com/user-attachments/assets/fa81e764-9072-460c-b9ea-6497a0ab1ee6" />
+</details>
 </details>
 <details>
   <summary>휴가/연차 단위 테스트</summary>
@@ -431,7 +440,50 @@ HERO는 단순한 기능 나열이 아닌,
 </details>
 <details>
   <summary>급여 관리 단위 테스트</summary>
-<img width="1301" height="165" alt="image" src="" />
+<details>
+<summary>급여 명세서 서비스 단위 테스트</summary>
+<img width="1323" height="391" alt="스크린샷 2026-01-08 오후 4 28 29" src="https://github.com/user-attachments/assets/e5ee5cc7-a9a3-4f21-8bcd-3d92a31d99d3" />
+</details>
+  <details>
+<summary>급여 리포트 서비스 단위 테스트</summary>
+<img width="1365" height="433" alt="스크린샷 2026-01-08 오후 4 34 44" src="https://github.com/user-attachments/assets/782ec8a4-2ca9-401c-977a-1649b2f4c1c1" />
+</details>
+  <details>
+<summary>급여 지급 조회 서비스 단위 테스트</summary>
+<img width="1484" height="508" alt="스크린샷 2026-01-08 오후 4 24 03" src="https://github.com/user-attachments/assets/40cf8d54-c192-4109-9584-cd4cedae095d" />
+</details>
+  <details>
+<summary>급여 배치 서비스 단위 테스트</summary>
+<img width="1499" height="761" alt="스크린샷 2026-01-08 오후 4 16 38" src="https://github.com/user-attachments/assets/646655d2-a7c0-458d-83a2-dc1f29a63d83" />
+</details>
+  <details>
+<summary>급여 계좌 서비스 단위 테스트</summary>
+<img width="1463" height="657" alt="스크린샷 2026-01-08 오후 4 12 51" src="https://github.com/user-attachments/assets/e43ee36e-fbda-4097-8c52-fd6794dd8b26" />
+</details>
+<details>
+<summary>수당 서비스 단위 테스트</summary>
+<img width="1100" height="600" alt="스크린샷 2026-01-08 오후 3 55 46" src="https://github.com/user-attachments/assets/fae703ca-71fe-481d-91d5-95224f933b74" />
+</details>
+  <details>
+<summary>공제 서비스 단위 테스트</summary>
+<img width="1317" height="656" alt="스크린샷 2026-01-08 오후 4 17 11" src="https://github.com/user-attachments/assets/b8f9a1f7-c926-4cd6-b79f-59cf61729883" />
+</details>
+  <details>
+<summary>급여 정책 서비스 단위 테스트</summary>
+<img width="1236" height="672" alt="스크린샷 2026-01-08 오후 4 32 26" src="https://github.com/user-attachments/assets/3ff1630e-6bf3-488a-ba7f-841d6c276094" />
+</details>
+  <details>
+<summary>급여 분석 Overview 서비스 단위 테스트</summary>
+<img width="1374" height="443" alt="스크린샷 2026-01-08 오후 4 11 56" src="https://github.com/user-attachments/assets/00de89f6-5eab-4c8b-af40-388d24325654" />
+</details>
+  <details>
+<summary>급여 구성 분석 서비스 단위 테스트</summary>
+<img width="1224" height="417" alt="스크린샷 2026-01-08 오후 3 56 43" src="https://github.com/user-attachments/assets/b24cf811-96d3-405f-8955-861d42f779a0" />
+</details>
+  <details>
+<summary>급여 조직 분석 서비스 단위 테스트</summary>
+<img width="1374" height="443" alt="스크린샷 2026-01-08 오후 4 10 49" src="https://github.com/user-attachments/assets/695b7d2d-59cf-4da2-8984-56a7826112bb" />
+</details>
 </details>
 <details>
   <summary>조직도 단위 테스트</summary>
@@ -479,10 +531,48 @@ HERO는 단순한 기능 나열이 아닌,
 </details>
 <details>
   <summary>알림 단위 테스트</summary>
-<img width="1301" height="165" alt="image" src="" />
+<details>
+<summary>알림 조회 서비스 단위 테스트</summary>
+<img width="1315" height="429" alt="스크린샷 2026-01-08 오후 3 41 39" src="https://github.com/user-attachments/assets/60c330fe-4541-421f-a750-0bd2fcfa23f6" />
+</details>
+  <details>
+<summary>알림 등록 및 웹소켓 전송</summary>
+<img width="1315" height="429" alt="스크린샷 2026-01-08 오후 3 51 11" src="https://github.com/user-attachments/assets/790c77b8-0c63-4ac9-8a0d-ecc3a129cba7" />
+</details>
+  <details>
+<summary>사원별 알림 설정 조회</summary>
+<img width="1315" height="429" alt="스크린샷 2026-01-08 오후 3 47 56" src="https://github.com/user-attachments/assets/9fdce0fd-25b1-45d5-b33c-56c93739190f" />
+</details>
+  <details>
+<summary>알림 설정 수정</summary>
+<img width="1315" height="429" alt="스크린샷 2026-01-08 오후 3 48 00" src="https://github.com/user-attachments/assets/7c335dea-1329-4088-af1b-653c1474f36e" />
 </details>
 <details>
-  <summary>파이썬 서버 연동 단위 테스</summary>
+<summary>알림 상태/삭제 처리</summary>
+<img width="1315" height="488" alt="스크린샷 2026-01-08 오후 3 51 17" src="https://github.com/user-attachments/assets/9f4d8895-6f60-4fd9-9d48-dd0bcd717bd9" />
+</details>
+<details>
+<summary>삭제 알림 정리 배치</summary>
+<img width="1315" height="429" alt="스크린샷 2026-01-08 오후 3 51 08" src="https://github.com/user-attachments/assets/21714159-9cc8-4309-9aca-e5df520d5009" />
+</details>
+<details>
+<summary>출근 처리(지각 알림 이벤트)</summary>
+<img width="1315" height="488" alt="스크린샷 2026-01-08 오후 3 52 51" src="https://github.com/user-attachments/assets/0d99aa00-c4cf-4ada-bc22-d0e1614385ce" />
+</details>
+<details>
+<summary>퇴근 처리(주간 근무시간 경고 이벤트)</summary>
+<img width="1315" height="488" alt="스크린샷 2026-01-08 오후 3 52 56" src="https://github.com/user-attachments/assets/37f17728-b71f-4208-9df7-03a6fbd013e4" />
+</details>
+
+<details>
+<summary>출근 미체크 직원 조회</summary>
+<img width="1315" height="379" alt="스크린샷 2026-01-08 오후 3 53 05" src="https://github.com/user-attachments/assets/e71819e8-287d-426c-b7b2-2f44c24d9d35" />
+</details>
+
+
+</details>
+<details>
+  <summary>파이썬 서버 연동 단위 테스트</summary>
 <img width="1196" height="622" alt="image" src="https://github.com/user-attachments/assets/086b21ef-4534-4984-b419-b4d624b11798" />
 </details>
 </details>
