@@ -402,8 +402,48 @@ HERO는 단순한 기능 나열이 아닌,
 <img width="1301" height="165" alt="image" src="" />
 </details>
 <details>
+  <summary>조직도 단위 테스트</summary>
+<img width="1125" height="596" alt="image" src="https://github.com/user-attachments/assets/6a1575c6-8215-4bf7-8b74-67ac866fa683" />
+</details>
+<details>
   <summary>사원 관리 단위 테스트</summary>
-<img width="1301" height="165" alt="image" src="" />
+  <details>
+    <summary>사원 CUD</summary>
+    <img width="1269" height="582" alt="image" src="https://github.com/user-attachments/assets/cfeddccf-8706-4d45-b8b0-318eaa6315a5" />
+  </details>
+  <details>
+    <summary>사원 비밀번호 변경</summary>
+    <img width="1315" height="572" alt="image" src="https://github.com/user-attachments/assets/6ca3c450-e611-4a60-b5f4-b88179f6a52b" />
+  </details>
+  <details>
+    <summary>사원 프로필 정보RU</summary>
+    <img width="1095" height="499" alt="image" src="https://github.com/user-attachments/assets/213b56da-2a1e-4605-baa0-51deb07a113f" />
+  </details>
+  <details>
+    <summary>사원 정보 조회</summary>
+    <img width="940" height="486" alt="image" src="https://github.com/user-attachments/assets/a60dbf96-1244-42a9-a7e2-3ae63d609e2b" />
+  </details>
+  <details>
+    <summary>사원 직인 CUD</summary>
+    <img width="1000" height="525" alt="image" src="https://github.com/user-attachments/assets/1c406a10-9d53-4318-90f9-596ffd1a2758" />
+  </details>
+  <details>
+    <summary>승진 관련 조회</summary>
+    <img width="1167" height="526" alt="image" src="https://github.com/user-attachments/assets/c2d723be-569b-4ea1-9567-6a15897fa9ef" />
+  </details>
+  <details>
+    <summary>승진 관련 CU</summary>
+    <img width="1019" height="530" alt="image" src="https://github.com/user-attachments/assets/ed509107-56b8-46aa-a6d3-9b94ce12cf88" />
+  </details>
+  <details>
+    <summary>승진 처리</summary>
+    <img width="1202" height="526" alt="image" src="https://github.com/user-attachments/assets/f919b032-f851-4b3b-b31e-3caf2c3b2689" />
+  </details>
+  <details>
+    <summary>퇴사 현황 조회</summary>
+    <img width="1043" height="489" alt="image" src="https://github.com/user-attachments/assets/5a6e1f96-9260-4ee2-88bc-35fbcc2ec581" />
+  </details>
+  
 </details>
 <details>
   <summary>알림 단위 테스트</summary>
