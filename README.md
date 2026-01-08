@@ -34,22 +34,28 @@
   <table>
   <tr>
     <td align="center">
-      <img width="100" height="100" alt="동근" src="" />
+      <img width="100" height="100" alt="동근" src="<img width="174" height="296" alt="image" src="https://github.com/user-attachments/assets/55671254-a267-491a-abe5-fe63ef756c0c" />
+" />
     </td>
     <td align="center">
-      <img width="100" height="100" alt="승민" src="" />
+      <img width="100" height="100" alt="승민" src="<img width="169" height="296" alt="image" src="https://github.com/user-attachments/assets/ce4b8c4d-ca6e-49ee-9e39-dcfc5dfd4150" />
+" />
     </td>
     <td align="center">
-      <img width="100" height="100" alt="민철" src="" />
+      <img width="100" height="100" alt="민철" src="<img width="162" height="296" alt="image" src="https://github.com/user-attachments/assets/cfa79d0a-594e-4516-ab3d-f5941c3470c4" />
+" />
     </td>
     <td align="center">
-      <img width="100" height="100" alt="승건" src="" />
+      <img width="100" height="100" alt="승건" src="<img width="171" height="296" alt="image" src="https://github.com/user-attachments/assets/df6fc827-1054-4279-b780-d25617889d8f" />
+" />
     </td>
     <td align="center">
-      <img width="100" height="100" alt="지윤" src="" />
+      <img width="100" height="100" alt="지윤" src="<img width="165" height="296" alt="image" src="https://github.com/user-attachments/assets/ca2a868e-07f1-495d-aae3-a08cb0d2ce4a" />
+" />
     </td>
     <td align="center">
-      <img width="100" height="100" alt="혜원" src="" />
+      <img width="100" height="100" alt="혜원" src="<img width="145" height="296" alt="image" src="https://github.com/user-attachments/assets/09ed2959-b9ed-4fa8-9139-feedab470847" />
+" />
     </td>
   </tr>
   <tr>
