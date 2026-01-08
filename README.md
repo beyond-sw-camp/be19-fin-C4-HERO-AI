@@ -211,6 +211,59 @@ HERO는 단순한 기능 나열이 아닌,
 </div>
 <hr>
 
+
+## Wire Frame
+<details>
+  <summary>Wire Frame</summary>
+<details>
+  <summary>로그인</summary>
+<img width="1213" height="346" alt="image" src="https://github.com/user-attachments/assets/252531b9-16df-4056-8a91-0b225bda94b0" />
+</details>
+<details>
+  <summary>근태 관리</summary>
+<img width="1102" height="815" alt="image" src="https://github.com/user-attachments/assets/604003cd-3daf-47dd-8fd0-4d30c82cffb5" />
+</details>
+<details>
+  <summary>휴가 / 연차</summary>
+<img width="1147" height="717" alt="image" src="https://github.com/user-attachments/assets/2e57414d-64c5-4a7d-892c-27cb421bc64e" />
+</details>
+<details>
+  <summary>전자 결재</summary>
+<img width="1137" height="786" alt="image" src="https://github.com/user-attachments/assets/fed47ffc-ab2c-4bf7-b696-bfc81fad9bcd" />
+</details>
+<details>
+  <summary>성과 평가</summary>
+<img width="1045" height="827" alt="image" src="https://github.com/user-attachments/assets/36a5087e-4073-465b-8f52-c52358323e62" />
+<img width="608" height="762" alt="image" src="https://github.com/user-attachments/assets/fc6947e4-061f-418f-b668-a5f88fc58890" />
+</details>
+<details>
+  <summary>급여</summary>
+<img width="888" height="598" alt="image" src="https://github.com/user-attachments/assets/2f75eac6-3773-4457-b761-652aefaecd23" />
+</details>
+<details>
+  <summary>급여 관리</summary>
+<img width="1206" height="733" alt="image" src="https://github.com/user-attachments/assets/8257b82f-e08d-433d-ba72-b54ab7fe1e53" />
+<img width="420" height="831" alt="image" src="https://github.com/user-attachments/assets/dcc2f6b6-71c8-465e-889b-0e613b596701" />
+</details>
+<details>
+  <summary>사원 관리</summary>
+<img width="652" height="802" alt="image" src="https://github.com/user-attachments/assets/ecf0407c-7387-46b9-ac4e-06b3a3fbbc0d" />
+</details>
+<details>
+  <summary>조직도</summary>
+<img width="1100" height="410" alt="image" src="https://github.com/user-attachments/assets/afff67ec-b6e1-427c-a73d-95328d197936" />
+</details>
+<details>
+  <summary>알림</summary>
+<img width="1027" height="667" alt="image" src="https://github.com/user-attachments/assets/d3ed9362-45c5-4c9f-9754-f68f59d8762b" />
+</details>
+<details>
+  <summary>설정</summary>
+<img width="943" height="762" alt="image" src="https://github.com/user-attachments/assets/3a5dea74-5e36-4062-8773-4590977bedb7" />
+</details>
+</details>
+<hr>
+
 ## API 명세서
 <details>
   <summary>REST API</summary>
