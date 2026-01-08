@@ -360,18 +360,38 @@ HERO는 단순한 기능 나열이 아닌,
 <img width="1301" height="550" alt="image" src="https://github.com/user-attachments/assets/022e2734-b0d8-4eaa-990c-83e0b880f753" />
 </details>
 <details>
-  <summary>사원 API</summary>
-<img width="1301" height="687" alt="image" src="https://github.com/user-attachments/assets/dedabb01-3898-4f76-a5d5-03e3f85fa4cf" />
-<img width="1301" height="492" alt="image" src="https://github.com/user-attachments/assets/69574f5c-2cf7-4e34-b050-7753cf8626d1" />
+  <summary>직원 API</summary>
+<img width="899" height="688" alt="image" src="https://github.com/user-attachments/assets/f552bd6e-3a7e-473d-9cdc-193f08a46870" />
 </details>
 <details>
   <summary>사원 패스워드 API</summary>
-<img width="1301" height="207" alt="image" src="https://github.com/user-attachments/assets/1635eef1-637b-4c96-982b-5e55ff8d44a1" />
+<img width="1797" height="289" alt="image" src="https://github.com/user-attachments/assets/f1111c46-55dd-4d1e-a22d-2568318358ee" />
+</details>
+<details>
+  <summary>인증 API</summary>
+<img width="1804" height="297" alt="image" src="https://github.com/user-attachments/assets/13d8d6da-df16-44c7-8938-ed2eb0562681" />
 </details>
 <details>
   <summary>결재 API</summary>
 <img width="1301" height="745" alt="image" src="https://github.com/user-attachments/assets/28f44dff-c672-459e-8c33-75a50d1ea3b1" />
 </details>
+<details>
+  <summary>환경설정 API</summary>
+<img width="895" height="920" alt="image" src="https://github.com/user-attachments/assets/2bc22fef-2af5-4c2c-be28-c7926b9323cc" />
+</details>
+<details>
+  <summary>퇴직 API</summary>
+<img width="897" height="309" alt="image" src="https://github.com/user-attachments/assets/6414793b-60d8-40b9-8796-a08add614b58" />
+</details>
+<details>
+  <summary>승진 API</summary>
+<img width="898" height="535" alt="image" src="https://github.com/user-attachments/assets/5284a8e2-63d4-4316-b8b0-6444c7bdd0d7" />
+</details>
+<details>
+  <summary>조직도 API</summary>
+<img width="897" height="194" alt="image" src="https://github.com/user-attachments/assets/5cdebc31-8db5-42e8-9ab9-c5c8a4c0abec" />
+</details>
+
 </details>
 <br>
 <div align="right">
