@@ -124,15 +124,29 @@
 <img width="2121" height="1262" alt="KakaoTalk_Photo_2026-01-05-16-59-19" src="https://github.com/user-attachments/assets/db665141-4fce-48d2-806f-c887f7e971c5" />
 
 
-## ERD
-<img width="1302" height="743" alt="스크린샷 2026-01-05 오후 4 44 13" src="https://github.com/user-attachments/assets/8958b9d9-7e29-4254-b8ed-522a6ca3f700" />
+
 
 
 ## WBS
+<img width="1241" height="581" alt="스크린샷 2026-01-08 오전 10 35 48" src="https://github.com/user-attachments/assets/b992c4e2-6c2f-4a3c-8207-f8cfc5bbb3f6" />
 
 
 
 ## 요구사항 명세서
+<img width="845" height="630" alt="스크린샷 2026-01-08 오후 1 48 17" src="https://github.com/user-attachments/assets/8ed93daf-634e-4b8e-b71d-9be077c9c43b" />
+<img width="845" height="630" alt="스크린샷 2026-01-08 오후 1 48 40" src="https://github.com/user-attachments/assets/23e94920-cf4e-49ea-8f3b-d0a2b9da3f60" />
+<img width="845" height="571" alt="스크린샷 2026-01-08 오후 1 48 53" src="https://github.com/user-attachments/assets/de2bb6e4-ac83-4e5d-86af-5b65646e4480" />
+
+
+
+
+## DDD
+<img width="1190" height="643" alt="스크린샷 2026-01-05 오후 5 06 50" src="https://github.com/user-attachments/assets/46fb17fe-65dd-4aa6-b901-7007a671e5b9" />
+
+## ERD
+<img width="1302" height="743" alt="스크린샷 2026-01-05 오후 4 44 13" src="https://github.com/user-attachments/assets/8958b9d9-7e29-4254-b8ed-522a6ca3f700" />
+
+
 
 ## API 명세서
 <details>
@@ -227,8 +241,3 @@
 </details>
 
 
-
-
-
-## DDD
-<img width="1190" height="643" alt="스크린샷 2026-01-05 오후 5 06 50" src="https://github.com/user-attachments/assets/46fb17fe-65dd-4aa6-b901-7007a671e5b9" />
