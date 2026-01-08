@@ -487,6 +487,259 @@ HERO는 단순한 기능 나열이 아닌,
 </details>
 </details>
 
+## UI / UX 단위 테스트
+<details>
+  <summary>UI/UX 단위 테스트 작성중</summary>
+<details>
+<summary>로그인</summary>
+
+![로그인화면 로그인](https://github.com/user-attachments/assets/d57cc4c2-376a-4c26-9973-8cbe70cc8147)
+</details>
+
+<details>
+<summary>로그아웃</summary>
+
+![로그아웃](https://github.com/user-attachments/assets/a1034b96-7875-4d7b-b4bd-3a3a96ab5f15)
+</details>
+
+<details>
+<summary>마이페이지</summary>
+
+![마이페이지 진입](https://github.com/user-attachments/assets/3ec83a52-2aa0-4669-be07-e134bcf17911)
+</details>
+
+<details>
+<summary>개인 근태 이력</summary>
+
+![근태 관리 - 근태기록 - 개인근태이력](https://github.com/user-attachments/assets/e3c20a26-150f-40c0-af92-61d3c036d41b)
+</details>
+
+<details>
+<summary>근무 유형 변경 이력</summary>
+
+![근태 관리 - 근태기록 - 근무유형변경이력](https://github.com/user-attachments/assets/123c792f-2de4-4f6a-bf10-595ea3bc27f9)
+</details>
+
+<details>
+<summary>지연 근무 수정 이력</summary>
+
+![근태 관리 - 근태기록 - 지연근무수정이력](https://github.com/user-attachments/assets/9099efbf-8c54-4035-a33e-1c5684158361)
+</details>
+
+
+<details>
+<summary>초과 근무 이력</summary>
+
+![근태 관리 - 근태기록 - 초과근무이력](https://github.com/user-attachments/assets/8204d81c-e678-402d-ab46-6432e80501b4)
+</details>
+
+<details>
+<summary>근태 대시 보드</summary>
+
+![근태 관리 - 근태대시보드](https://github.com/user-attachments/assets/09817ee0-4918-4c9b-8a0e-95f31e2a60a2)
+</details>
+
+<details>
+<summary>부서 근태 현황</summary>
+
+![근태 관리 - 부서 근태 현황](https://github.com/user-attachments/assets/061eea88-3346-48f5-952d-e307b699927d)
+</details>
+
+<details>
+<summary>이력조회</summary>
+
+![마이페이지 - 이력조회](https://github.com/user-attachments/assets/3c544f20-4e8c-4490-9eb9-eb427c9f01ec)
+</details>
+
+<details>
+<summary>비밀번호수정</summary>
+
+![마이페이지-비밀번호수정](https://github.com/user-attachments/assets/41748421-71dd-4143-8a23-c8bde61a765b)
+</details>
+
+
+<details>
+<summary>연락처 수정</summary>
+
+![마이페이지-연락처수정](https://github.com/user-attachments/assets/c5c8ff38-3af9-4dd9-80ff-279f2191976b)
+</details>
+
+<details>
+<summary>직인 편집</summary>
+
+![직인편집](https://github.com/user-attachments/assets/c084c8d5-31fe-4bf9-9928-e334f1c4d0f1)
+</details>
+
+<details>
+<summary>직인 편집 변경</summary>
+
+![직인편집-테스트로 변경](https://github.com/user-attachments/assets/b4a304c1-3e04-4ea8-881c-4fe97bfccd7f)
+</details>
+
+<details>
+<summary>출근</summary>
+
+![출근](https://github.com/user-attachments/assets/2de8f058-2b93-484d-8d5f-90151847ebdc)
+</details>
+
+<details>
+<summary>퇴근</summary>
+
+![퇴근](https://github.com/user-attachments/assets/d2883f01-c397-44dd-8025-89fd019de43c)
+</details>
+
+<details>
+<summary>메인 대시보드</summary>
+
+![메인 대시보드](https://github.com/user-attachments/assets/fc89b692-6951-49ab-be86-96fa3e0960d0)
+</details>
+
+<details>
+<summary>인사 발령 품의서</summary>
+
+![전자결재 - 결재문서서식 - 인사발령품의서](https://github.com/user-attachments/assets/a036330c-3de9-48bd-b7b5-ace1bd4d7cc3)
+</details>
+
+<details>
+<summary>사직서</summary>
+
+![전자결재 - 결재문서서식 - 사직서](https://github.com/user-attachments/assets/57c8b464-7404-49be-8b7a-52d025849f79)
+</details>
+
+<details>
+<summary>승진 계획서</summary>
+
+![전자결재 - 결재문서서식 - 승진계획서](https://github.com/user-attachments/assets/fce944ce-cc24-4a28-a9ed-8ccc90144c99)
+</details>
+
+<details>
+<summary>결재 문서 서식</summary>
+
+![전자결재 - 결재문서서식](https://github.com/user-attachments/assets/9ad97f30-9b23-4835-8b9e-0d97a237742d)
+</details>
+
+<details>
+<summary>부서 휴가 현황</summary>
+
+![휴가_연차 - 부서 휴가 현황](https://github.com/user-attachments/assets/21c801fd-aa4f-46de-869f-1f9763d8409b)
+</details>
+
+<details>
+<summary>휴가 이력</summary>
+
+![휴가_연차 - 휴가 이력](https://github.com/user-attachments/assets/cb5d2557-78e1-4b24-ba3d-f9cd2b925eef)
+</details>
+
+<details>
+<summary>급여 인상 신청서</summary>
+
+![전자결재 - 결재문서서식 - 급여인상신청서](https://github.com/user-attachments/assets/8611b256-0340-4e54-b9a7-7442b1c5c07c)
+</details>
+
+<details>
+<summary>근무 변경 신청서</summary>
+
+![전자결재 - 결재문서서식 - 근무변경신청서](https://github.com/user-attachments/assets/0e6c35f3-67ab-4f83-8aa5-9cc4cab664a4)
+</details>
+
+<details>
+<summary>급여 조정 신청서</summary>
+
+![전자결재 - 결재문서서식 - 급여조정신청서](https://github.com/user-attachments/assets/7a6433df-18fa-4100-819f-4b1c1b579ccb)
+</details>
+
+<details>
+<summary>지연 출근 보고서</summary>
+
+![전자결재 - 결재문서서식 - 지연출근보고서](https://github.com/user-attachments/assets/0718e0ad-b1a3-44c4-aee2-9539c328ccd4)
+</details>
+
+<details>
+<summary>휴가 신청서</summary>
+
+![전자결재 - 결재문서서식 - 휴가신청서](https://github.com/user-attachments/assets/16e51913-56d0-466a-b143-364516788a46)
+</details>
+
+<details>
+<summary>초과 근무 신청서</summary>
+
+![전자결재 - 결재문서서식 - 초과근무신청서](https://github.com/user-attachments/assets/7c4b6923-37df-4456-81b6-33cc71b112b0)
+</details>
+
+<details>
+<summary>결재 문서함</summary>
+
+![전자결재 - 결재문서함](https://github.com/user-attachments/assets/7bb51cbb-e260-4614-9c3b-266fd10ddd0c)
+</details>
+
+<details>
+<summary>평가 템플릿 상세</summary>
+
+![성과평가 - 평가템플릿 - 평가템플릿 상세](https://github.com/user-attachments/assets/0a2b505c-02de-4368-8429-20f777f7bc1c)
+</details>
+
+<details>
+<summary>평가 템플릿 생성</summary>
+
+![성과평가 - 평가템플릿 - 평가템플릿 생성](https://github.com/user-attachments/assets/c1f5a9f1-35e8-4942-8ce9-9723dc99969e)
+</details>
+
+<details>
+<summary>평가 생성</summary>
+
+![성과평가 - 평가 목록 - 평가 생성](https://github.com/user-attachments/assets/093821cf-9edb-4261-8df4-176f0e21d8d6)
+</details>
+
+<details>
+<summary>평가 상세</summary>
+
+![성과 평가 - 생성된 평가 - 평가 상세](https://github.com/user-attachments/assets/cbb35129-4771-4e16-bb97-362ace86fda9)
+</details>
+
+<details>
+<summary>생성된 평가</summary>
+
+![성과 평가 - 생성된 평가](https://github.com/user-attachments/assets/79cf8bce-c5b3-4151-8d29-860e1cc2f323)
+</details>
+
+<details>
+<summary>평가 확인</summary>
+
+![성과 평가 - 생성된 평가 - 평가 확인](https://github.com/user-attachments/assets/5ac5e7af-725e-45df-94c8-44841c75ab83)
+</details>
+
+<details>
+<summary>평가 가이드</summary>
+
+![성과 평가 - 평가 가이드](https://github.com/user-attachments/assets/87411b75-8c38-42c6-a481-299d1b34ba54)
+</details>
+
+
+<details>
+<summary>팀원별 역량 상세 분석</summary>
+<img width="1511" height="710" alt="성과 평가 - 팀 평가 대시보드 - 팀원별역량상세분석1" src="https://github.com/user-attachments/assets/a79798e9-c237-4969-bad9-f8c8b9501615" />
+</details>
+
+<details>
+<summary>부서 등급 분포</summary>
+
+![성과 평가 - 팀 평가 대시보드 - 부서등급분포](https://github.com/user-attachments/assets/d55f2a5c-aad3-4aec-8428-aa9ea78df946)
+</details>
+
+<details>
+<summary>부서별 점수 비교</summary>
+
+![성과 평가 - 팀 평가 대시보드 - 부서별점수비교](https://github.com/user-attachments/assets/ca48d341-8084-41ce-af05-a9bd44c7a56f)
+</details>
+
+<details>
+<summary>팀원별 평가 점수 트렌드</summary>
+
+![성과 평가 - 팀 평가 대시보드 - 팀원별평가점수트렌드](https://github.com/user-attachments/assets/366e2252-b68c-4738-89f0-c7b3cc8fd9f0)
+</details>
+
+
+
 
 <br>
 <div align="right">
