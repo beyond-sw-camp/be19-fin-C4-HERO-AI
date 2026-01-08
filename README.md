@@ -263,12 +263,13 @@ HERO는 단순한 기능 나열이 아닌,
 <img width="943" height="762" alt="image" src="https://github.com/user-attachments/assets/3a5dea74-5e36-4062-8773-4590977bedb7" />
 </details>
 </details>
-<hr>
 <br>
 <div align="right">
   <a href="#목차">🔝 맨 위로</a>
 </div>
 <br>
+<hr>
+
 
 ## API 명세서
 <details>
