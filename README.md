@@ -9,7 +9,11 @@
   />
 </div>
 
+<hr>
+
 ## 목차
+
+<hr>
 
 ## 팀 소개
 
@@ -61,10 +65,29 @@
 
 <br>
 
-## 프로젝트 개요
+<hr>
+
+## 프로젝트 소개
+**HERO** 는 기업 내에 분산되어 있던 **근태, 휴가, 평가, 결재 데이터**를 하나의 흐름으로 통합 관리하는 **인사(HR) 시스템**입니다.
+
+각각 독립적으로 운영되던 인사 데이터를 유기적으로 연결함으로써
+**데이터 취합 및 관리에 소요되던 시간을 획기적으로 줄이고**, <br>
+핵심 인사 지표를 **대시보드로 한눈에 파악**할 수 있도록 설계되었습니다.
+
+또한,
+**역할(Role) 기반 권한 관리**를 통해
+관리자, 부서장, 일반 사원 등 사용자 유형에 따라 **필요한 기능만 노출되는 UI**를 제공하여 <br>
+보안성과 사용성을 동시에 고려한 인사 운영 환경을 구현합니다.
+
+HERO는 단순한 기능 나열이 아닌,
+**인사 데이터 간의 시너지를 극대화하여 효율적인 조직 운영을 지원하는 HR 플랫폼을 목표**로 합니다.
+
+<hr>
 
 
 ## 주요 기능
+
+<hr>
 
 ## 기술 스택
 ### 🧩 Backend - Spring
@@ -118,19 +141,19 @@
 ![Figma](https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 
-
+<hr>
 
 ## 시스템 아키텍처
 <img width="2121" height="1262" alt="KakaoTalk_Photo_2026-01-05-16-59-19" src="https://github.com/user-attachments/assets/db665141-4fce-48d2-806f-c887f7e971c5" />
 
 
 
-
+<hr>
 
 ## WBS
 <img width="1241" height="581" alt="스크린샷 2026-01-08 오전 10 35 48" src="https://github.com/user-attachments/assets/b992c4e2-6c2f-4a3c-8207-f8cfc5bbb3f6" />
 
-
+<hr>
 
 ## 요구사항 명세서
 <img width="845" height="630" alt="스크린샷 2026-01-08 오후 1 48 17" src="https://github.com/user-attachments/assets/8ed93daf-634e-4b8e-b71d-9be077c9c43b" />
@@ -138,15 +161,17 @@
 <img width="845" height="571" alt="스크린샷 2026-01-08 오후 1 48 53" src="https://github.com/user-attachments/assets/de2bb6e4-ac83-4e5d-86af-5b65646e4480" />
 
 
-
+<hr>
 
 ## DDD
 <img width="1190" height="643" alt="스크린샷 2026-01-05 오후 5 06 50" src="https://github.com/user-attachments/assets/46fb17fe-65dd-4aa6-b901-7007a671e5b9" />
 
+<hr>
+
 ## ERD
 <img width="1302" height="743" alt="스크린샷 2026-01-05 오후 4 44 13" src="https://github.com/user-attachments/assets/8958b9d9-7e29-4254-b8ed-522a6ca3f700" />
 
-
+<hr>
 
 ## API 명세서
 <details>
@@ -240,4 +265,5 @@
 </details>
 </details>
 
+<hr>
 
