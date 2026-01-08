@@ -408,7 +408,14 @@ HERO는 단순한 기능 나열이 아닌,
   <summary>테스트 목록</summary>
 <details>
   <summary>근태 관리 단위 테스트</summary>
-<img width="1301" height="328" alt="image" src="https://github.com/user-attachments/assets/03b17f62-a15f-4f98-acfb-0ec021b0b8c3" />
+  <details>
+    <summary>근태 조회</summary>
+    <img width="1236" height="490" alt="image" src="https://github.com/user-attachments/assets/d1542966-fddb-4e5b-9a61-450cee6c3267" />
+  </details>
+  <details>
+    <summary>근태 이벤트</summary>
+    <img width="1556" height="617" alt="image" src="https://github.com/user-attachments/assets/c7f53848-784f-4ffa-b6dd-f0904cbc9d1b" />
+  </details>
 </details>
 <details>
   <summary>휴가/연차 단위 테스트</summary>
