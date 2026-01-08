@@ -13,7 +13,56 @@
 
 ## 팀 소개
 
+<br>
+<div align="center">
+  <table>
+  <tr>
+    <td align="center">
+      <img width="100" height="100" alt="동근" src="" />
+    </td>
+    <td align="center">
+      <img width="100" height="100" alt="승민" src="" />
+    </td>
+    <td align="center">
+      <img width="100" height="100" alt="민철" src="" />
+    </td>
+    <td align="center">
+      <img width="100" height="100" alt="승건" src="" />
+    </td>
+    <td align="center">
+      <img width="100" height="100" alt="지윤" src="" />
+    </td>
+    <td align="center">
+      <img width="100" height="100" alt="혜원" src="" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/dddd0ng"><b>곽동근</b></a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/indy0322"><b>김승민</b></a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/bynmch"><b>변민철</b></a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Seung-Geon"><b>이승건</b></a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Easy-going12"><b>이지윤</b></a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/haenin"><b>최혜원</b></a>
+    </td>
+  </tr>
+</table>
+</div>
+
+<br>
+
 ## 프로텍트 개요
+
 
 ## 주요 기능
 
