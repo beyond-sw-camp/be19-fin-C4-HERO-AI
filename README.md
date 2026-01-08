@@ -267,3 +267,44 @@ HERO는 단순한 기능 나열이 아닌,
 
 <hr>
 
+
+
+## 단위 테스트
+
+<details>
+  <summary>테스트 목록</summary>
+<details>
+  <summary>근태 관리 단위 테스트</summary>
+<img width="1301" height="328" alt="image" src="https://github.com/user-attachments/assets/03b17f62-a15f-4f98-acfb-0ec021b0b8c3" />
+</details>
+<details>
+  <summary>휴가/연차 단위 테스트</summary>
+<img width="1301" height="399" alt="image" src="" />
+</details>
+<details>
+  <summary>전자 결재 단위 테스트</summary>
+<img width="1296" height="593" alt="image" src="https://github.com/user-attachments/assets/22ecd0a5-6f73-4710-b9c2-32135926af6f" />
+</details>
+<details>
+  <summary>성과 평가 단위 테스트</summary>
+<img width="1436" height="895" alt="image" src="https://github.com/user-attachments/assets/ed5b7825-ebe4-4c8a-b605-7aceed00014c" />
+</details>
+<details>
+  <summary>급여 관리 단위 테스트</summary>
+<img width="1301" height="165" alt="image" src="" />
+</details>
+<details>
+  <summary>사원 관리 단위 테스트</summary>
+<img width="1301" height="165" alt="image" src="" />
+</details>
+<details>
+  <summary>알림 단위 테스트</summary>
+<img width="1301" height="165" alt="image" src="" />
+</details>
+<details>
+  <summary>파이썬 서버 연동 단위 테스</summary>
+<img width="1196" height="622" alt="image" src="https://github.com/user-attachments/assets/086b21ef-4534-4984-b419-b4d624b11798" />
+</details>
+</details>
+
+<hr>
