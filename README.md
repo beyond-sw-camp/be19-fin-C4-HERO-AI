@@ -16,7 +16,7 @@
 #### [요구사항 명세서](#요구사항-명세서-1)
 #### [DDD](#ddd-1)
 #### [ERD](#erd-1)
-#### [Wire Frame](#wire-frame-1)
+#### [와이어 프레임](#와이어-프레임-1)
 #### [API 명세서](#api-명세서-1)
 #### [단위 테스트](#단위-테스트-1)
 #### [UI / UX 테스트](#ui--ux-단위-테스트)
@@ -250,7 +250,7 @@ HERO는 단순한 기능 나열이 아닌,
 <hr>
 
 
-## Wire Frame
+## 와이어 프레임
 <details>
   <summary>Wire Frame</summary>
 <details>
@@ -608,6 +608,8 @@ HERO는 단순한 기능 나열이 아닌,
 <hr>
 
 ## UI / UX 단위 테스트
+<details> <summary>테스트 목록</summary>
+  
 <details>
 <summary>계정 관리</summary>
   
@@ -1220,6 +1222,7 @@ HERO는 단순한 기능 나열이 아닌,
   </summary>
 </details>
 
+</details>
 <br>
 <div align="right">
   <a href="#목차">🔝 맨 위로</a>
