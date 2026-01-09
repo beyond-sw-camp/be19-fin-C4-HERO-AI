@@ -836,7 +836,7 @@ HERO는 단순한 기능 나열이 아닌,
 <div align="right">
   <a href="#목차">🔝 맨 위로</a>
 </div>
-
+</details>
 <hr>
 
 ## CI / CD 계획서
