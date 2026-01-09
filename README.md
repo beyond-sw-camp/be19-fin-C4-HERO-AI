@@ -831,13 +831,21 @@ HERO는 단순한 기능 나열이 아닌,
 ![성과 평가 - 팀 평가 대시보드 - 팀원별평가점수트렌드](https://github.com/user-attachments/assets/366e2252-b68c-4738-89f0-c7b3cc8fd9f0)
 </details>
 
+</details>
 
 <br>
 <div align="right">
   <a href="#목차">🔝 맨 위로</a>
 </div>
-</details>
 <hr>
 
 ## CI / CD 계획서
-CI/CD 관련 내용 (제목 수정 가능)
+<details>
+  내용 & 제목 수정 가능
+</details>
+
+
+<br>
+<div align="right">
+  <a href="#목차">🔝 맨 위로</a>
+</div>
