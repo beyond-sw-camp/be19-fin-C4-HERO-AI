@@ -849,3 +849,16 @@ HERO는 단순한 기능 나열이 아닌,
 <div align="right">
   <a href="#목차">🔝 맨 위로</a>
 </div>
+<hr>
+
+## 프로젝트 회고
+- 동근
+- 혜원
+- 지윤
+- 민철
+- 승민
+- 승건
+<br>
+<div align="right">
+  <a href="#목차">🔝 맨 위로</a>
+</div>
